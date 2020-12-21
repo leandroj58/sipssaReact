@@ -1,0 +1,13 @@
+@import "../../variables.scss";
+
+.footer-container {
+	font-size: var(--size__01);
+	font-family: var(--mainFont);
+	color: var(--color__04);
+	border-radius: var(--border__radius);
+	background-color: var(--color__03);
+	grid-column: 1/4;
+	grid-row: 3/4;
+	width: 100%;
+	justify-content: center;
+}

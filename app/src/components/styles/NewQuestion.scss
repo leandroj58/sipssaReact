@@ -1,0 +1,11 @@
+@import "../../variables.scss";
+.NewQuestion__container{
+background-color: var(--color__02);
+.title{
+  font-family: var(--mainFont);
+}
+.input__text{
+  font-family: var(--mainFont);
+  font-size: 12px;
+}
+}

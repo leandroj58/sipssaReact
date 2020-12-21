@@ -1,0 +1,24 @@
+@import "../../variables.scss";
+
+.dashboard__container {
+	grid-column: 1/4;
+	grid-row: 2/3;
+	width: 100%;
+
+	display: grid;
+	grid-gap: 15px;
+	grid-template-columns: 1fr 1fr;
+	grid-auto-rows: 1fr;
+
+	.inner__containder {
+    background-color: var(--color__05);
+    font-size: var(--size__01);
+	font-family: var(--mainFont);
+  color: var(--color__02);
+    border-radius: var(--border__radius);
+		width: 100%;
+		height: 100px;
+		grid-column: span 1;
+    grid-row: span 2;
+	}
+}

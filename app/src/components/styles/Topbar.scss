@@ -1,0 +1,14 @@
+@import "../../variables.scss";
+
+.topbar-container {
+	background-color: var(--color__05);
+	color: var(--color__02);
+  font-family: var(--mainFont);
+  font-size: var(--size__02);
+  border-radius: var(--border__radius);
+  grid-column: 1/4;
+  grid-row: 1/2;
+  height: 40px;
+  width: 100%;
+  justify-items: center;
+}
