@@ -1,6 +1,7 @@
 @import "../../variables.scss";
 .NewQuestion__container{
 background-color: var(--color__02);
+grid-column: 1/2;
 .title{
   font-family: var(--mainFont);
 }

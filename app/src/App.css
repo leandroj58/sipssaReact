@@ -1,9 +1,9 @@
 .App {
   display: grid;
   background-color: var(--color__02);
-	grid-template-columns: 3fr;
+	grid-template-columns: 1fr;
 	grid-auto-rows: min-content;
-  width: 375px;
+  /* width: 375px; */
   grid-row-gap: 15px;
 	height: auto;
 	margin: 0 auto;
