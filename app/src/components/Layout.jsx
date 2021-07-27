@@ -2,6 +2,8 @@ import React from "react";
 import Footer from "./Footer";
 import Topbar from "./Topbar";
 
+import "../components/styles/main.scss";
+
 function Layout(props) {
 
   return (

@@ -1,13 +1,15 @@
-@import "../../variables.scss";
+@import "main.scss";
 
 .footer-container {
-	font-size: var(--size__01);
-	font-family: var(--mainFont);
-	color: var(--color__04);
-	border-radius: var(--border__radius);
-	background-color: var(--color__03);
+	font-size: $cbx_font_size_1;
+	font-family: $cbx_font_family;
+	color: $cbx_dark_color;
+	border-radius: $cbx_border_radius_small;
+	background-color: $cbx_ligth_color;
 	grid-column: 1/2;
 	grid-row: 3/4;
+	height: auto;
 	width: 100%;
-	justify-content: center;
+	padding: 5px;
+	text-align: right;
 }

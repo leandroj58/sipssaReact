@@ -9,6 +9,10 @@ function Dashboard() {
 			<Link to="/NewQuestion" className="button is-primary">
 				Crea una nueva pregunta re linda...
 			</Link>
+			
+			<Link to="/questionView" className="button is-primary">
+				ver pregunta
+			</Link>
 		</div>
 	);
 }

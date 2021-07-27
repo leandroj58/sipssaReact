@@ -1,0 +1,98 @@
+@charset "utf-8";
+// Import a Google Font
+@import url("https://fonts.googleapis.com/css?family=Nunito:200,400,700");
+
+// -- cbx globals variables
+
+// - Colors
+$cbx_alert_color: #e63946;
+$cbx_background_color: #f1faee;
+$cbx_ligth_color: #a8dadc;
+$cbx_primary_color: #457b9d;
+$cbx_dark_color: #1d3557;
+
+// - Font sizes
+$cbx_font_size_1: 16px;
+$cbx_font_size_2: 20px;
+$cbx_font_size_3: 25px;
+$cbx_font_size_4: 35px;
+
+// - Font family
+$cbx_font_family: "Nunito", sans-serif;
+
+// - Borders
+$cbx_border_radius_big: 10px;
+$cbx_border_radius_small: 5px;
+
+
+// -- Update Bulma's global variables
+$family-sans-serif: $cbx_font_family;
+$grey-dark: $cbx_dark_color;
+$grey-light: $cbx_ligth_color;
+$primary: $cbx_primary_color;
+$link: $cbx_alert_color;
+$widescreen-enabled: false;
+$fullhd-enabled: false;
+
+// - Inputs
+$input-background-color: $cbx_ligth_color;
+$input-border-color: $cbx_dark_color;
+$input-focus-border-color: $cbx_dark_color;
+$input-focus-box-shadow-color: rgba($cbx_dark_color, 0.25);
+$input-focus-box-shadow-size: none;
+$input-shadow: none;
+
+// - Update some of Bulma's component variables
+$body-background-color: $cbx_background_color;
+$control-border-width: 2px;
+$input-border-color: transparent;
+
+
+
+//h2
+@mixin h2 {
+	font-family: $family-sans-serif;
+	font-size: $cbx_font_size_3;
+	color: $primary;
+}
+
+//h3
+@mixin h3 {
+	font-family: $family-sans-serif;
+	font-size: $cbx_font_size_2;
+	color: $primary;
+}
+
+//Grid
+@mixin defaultGrid($cols, $rows, $gap: 15px) {
+	display: grid;
+	grid-template-columns: $cols;
+	grid-template-rows: $rows;
+	grid-gap: $gap;
+	width: 100%;
+	height: auto;
+}
+
+//Grid
+@mixin autoRowGrid($cols, $autoRows, $gap: 15px) {
+	display: grid;
+	grid-template-columns: $cols;
+	grid-auto-rows: $autoRows;
+	grid-gap: $gap;
+	width: 100%;
+	height: auto;
+}
+
+input[type="text"] {
+	@extend .input;
+	@extend .is-normal;
+	
+}
+
+button.primary {
+	@extend .button;
+	@extend .is-normal;
+	@extend .is-primary;
+}
+
+@import "../../../node_modules/bulma/bulma.sass";

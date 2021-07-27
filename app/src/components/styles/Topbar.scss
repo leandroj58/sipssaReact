@@ -1,14 +1,16 @@
-@import "../../variables.scss";
+@import "main.scss";
 
 .topbar-container {
-	background-color: var(--color__05);
-	color: var(--color__02);
-	font-family: var(--mainFont);
-	font-size: var(--size__02);
-	border-radius: var(--border__radius);
+	background-color: $cbx_dark_color;
+	color: $cbx_ligth_color;
+	font-family: $cbx_font_family;
+	font-size:  $cbx_font_size_3;
+	font-weight: lighter;
+	border-radius: $cbx_border_radius_small;
 	grid-column: 1/2;
 	grid-row: 1/2;
-	height: 40px;
+	height: auto;
 	width: 100%;
-	justify-items: center;
+	padding: 5px;
+	align-self: center;
 }

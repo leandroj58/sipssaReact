@@ -1,0 +1,5 @@
+@import "main.scss";
+
+div.newQuestion_page {
+  @include defaultGrid(1fr, 1fr min-content, 15px);
+}
